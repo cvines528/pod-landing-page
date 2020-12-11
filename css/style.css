@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&display=swap');
+body {
+    background: #121725;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 300;
+    color: #F2F2F2;
+}
+
+.container {
+    /* margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px; 
+    display: block;
+    margin-top: 5%;
+    margin-bottom: auto;
+    max-height: 500px;
+}
+
+.info-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr)
+}
+.info-text-box {
+    grid-column: 1 /  8;
+    grid-row: 2 / 6;
+    background: #121725;
+    z-index: 1;
+}
+.info-content h1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 62px;
+/* or 119% */
+    text-transform: uppercase;
+}
+
+.info-content h1 span {
+    color: #54E6AF;
+}
+
+.info-content p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 118px 0 0px;
+    color: #C2CBE5;
+}
+
+.info-content .form {
+    width: 427px;
+    height: 56px;
+    position: relative;
+    margin: 50px 0
+}
+.info-content .form input[type="email"] {
+    width: 427px;
+    height: 56px;
+    background: #2C344B;
+    border-radius: 28px;
+    border: none;
+}
+.info-content .form input[type="email"]::placeholder {
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.info-content .form input[type="submit"] {
+    width: 162px;
+    height: 46px;
+    position: absolute;
+    top: 6px;
+    left: 265px;
+    background: #54E6AF;
+    box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+    border-radius: 28px;
+    border: none;
+}
+.info-content .form input[type="submit"]::placeholder {
+    font-size: 14px;
+    line-height: 28px;
+    color: #121725;
+    font-weight: 400;
+}
+
+.company-logos img{
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.large-background-image {
+    grid-column: 4 /  span 12;
+    grid-row: 1 /  6;
+}
+
+.dots {
+    /* display: grid;
+    width: 960px;
+    justify-items: end;
+    right: 0; */
+    position: absolute;
+    right: 245px;
+    bottom: 120px;
+}
+
+
